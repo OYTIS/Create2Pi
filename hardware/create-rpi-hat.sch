@@ -778,7 +778,7 @@ $EndComp
 Wire Wire Line
 	3500 5500 4000 5500
 Wire Wire Line
-	10250 1650 10250 2350
+	10250 1650 10250 2050
 NoConn ~ 9800 2050
 $Comp
 L LMZ21701SILT:LMZ21701SILT IC1
@@ -942,4 +942,9 @@ Wire Notes Line style solid
 	6650 4750 6650 3650
 Text Notes 7150 3750 0    50   ~ 0
 Mixing 3.3V sources
+Wire Wire Line
+	9800 2050 10250 2050
+Connection ~ 10250 2050
+Wire Wire Line
+	10250 2050 10250 2350
 $EndSCHEMATC

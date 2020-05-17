@@ -1,4 +1,4 @@
-update=Thu 14 May 2020 11:47:37 PM CEST
+update=Sun 17 May 2020 11:20:40 PM CEST
 version=1
 last_client=kicad
 [general]
@@ -238,10 +238,10 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=Power
-Clearance=0.3
+Clearance=0.2
 TrackWidth=0.5
-ViaDiameter=1.6
-ViaDrill=0.8
+ViaDiameter=1
+ViaDrill=0.5
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
@@ -264,7 +264,7 @@ PageLayoutDescrFile=
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=
+NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1
