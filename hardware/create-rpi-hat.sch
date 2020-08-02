@@ -17,7 +17,7 @@ Wire Wire Line
 	9800 1450 9800 1550
 Wire Wire Line
 	10150 1750 9800 1750
-Text Label 1500 4800 0    50   ~ 0
+Text Label 2150 5300 0    50   ~ 0
 VIN_Roomba
 $Comp
 L power:GND #PWR05
@@ -30,8 +30,6 @@ F 3 "" H 3050 2350 50  0001 C CNN
 	1    3050 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2800 2300 2900 2300
 Wire Wire Line
 	3050 2300 3050 2350
 $Comp
@@ -124,9 +122,9 @@ F 3 "~" H 9500 2350 50  0001 C CNN
 	1    9500 2350
 	1    0    0    -1  
 $EndComp
-Text Label 1200 5100 0    50   ~ 0
+Text Label 2150 5200 0    50   ~ 0
 RX_Roomba
-Text Label 1200 5000 0    50   ~ 0
+Text Label 1100 5200 0    50   ~ 0
 TX_Roomba
 Wire Notes Line style solid
 	2700 5900 2700 4350
@@ -144,17 +142,6 @@ Text Notes 2600 1050 0    50   ~ 0
 Primary power regulator
 Text Label 3050 2000 0    50   ~ 0
 VIN_Roomba
-$Comp
-L power:+5V #PWR07
-U 1 1 5E7AFE4A
-P 3500 5900
-F 0 "#PWR07" H 3500 5750 50  0001 C CNN
-F 1 "+5V" H 3515 6073 50  0000 C CNN
-F 2 "" H 3500 5900 50  0001 C CNN
-F 3 "" H 3500 5900 50  0001 C CNN
-	1    3500 5900
-	1    0    0    -1  
-$EndComp
 Wire Notes Line style solid
 	3350 4700 5850 4700
 Wire Notes Line style solid
@@ -281,9 +268,9 @@ NoConn ~ 6500 2100
 Wire Wire Line
 	6500 1800 6750 1800
 Text Label 6550 1800 0    50   ~ 0
-RX_TTL
-Text Label 6550 1900 0    50   ~ 0
 TX_TTL
+Text Label 6550 1900 0    50   ~ 0
+RX_TTL
 Text Label 4750 2100 0    50   ~ 0
 USBDM
 Text Label 4750 2200 0    50   ~ 0
@@ -597,54 +584,27 @@ Connection ~ 7600 4250
 $Comp
 L power:GND #PWR02
 U 1 1 5E53BB99
-P 1550 5350
-F 0 "#PWR02" H 1550 5100 50  0001 C CNN
-F 1 "GND" H 1555 5177 50  0000 C CNN
-F 2 "" H 1550 5350 50  0001 C CNN
-F 3 "" H 1550 5350 50  0001 C CNN
-	1    1550 5350
+P 1350 4900
+F 0 "#PWR02" H 1350 4650 50  0001 C CNN
+F 1 "GND" H 1355 4727 50  0000 C CNN
+F 2 "" H 1350 4900 50  0001 C CNN
+F 3 "" H 1350 4900 50  0001 C CNN
+	1    1350 4900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5EE2593F
-P 1650 4900
-F 0 "#FLG0101" H 1650 4975 50  0001 C CNN
-F 1 "PWR_FLAG" H 1650 5073 50  0001 C CNN
-F 2 "" H 1650 4900 50  0001 C CNN
-F 3 "~" H 1650 4900 50  0001 C CNN
-	1    1650 4900
+P 1050 5300
+F 0 "#FLG0101" H 1050 5375 50  0001 C CNN
+F 1 "PWR_FLAG" H 1050 5473 50  0001 C CNN
+F 2 "" H 1050 5300 50  0001 C CNN
+F 3 "~" H 1050 5300 50  0001 C CNN
+	1    1050 5300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x05 J1
-U 1 1 5EC8659D
-P 1900 5100
-F 0 "J1" H 1980 5142 50  0000 L CNN
-F 1 "Roomba_conn" H 1980 5051 50  0000 L CNN
-F 2 "kicad-libs:CUI_TB001-500-05BE" H 1900 5100 50  0001 C CNN
-F 3 "~" H 1900 5100 50  0001 C CNN
-	1    1900 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 5300 1550 5300
-Wire Wire Line
-	1550 5300 1550 5350
-Wire Wire Line
-	1700 4900 1650 4900
-Wire Wire Line
-	1500 4900 1500 4800
-Wire Wire Line
-	1700 5100 1200 5100
-Wire Wire Line
-	1700 5000 1200 5000
-NoConn ~ 1700 5200
 Wire Notes Line style solid
 	1000 4350 1000 5900
-Connection ~ 1650 4900
-Wire Wire Line
-	1650 4900 1500 4900
 Wire Notes Line style solid
 	2700 5900 1000 5900
 Wire Notes Line style solid
@@ -652,12 +612,12 @@ Wire Notes Line style solid
 $Comp
 L power:+5V #PWR09
 U 1 1 5E5D9AFB
-P 4300 4950
-F 0 "#PWR09" H 4300 4800 50  0001 C CNN
-F 1 "+5V" H 4315 5123 50  0000 C CNN
-F 2 "" H 4300 4950 50  0001 C CNN
-F 3 "" H 4300 4950 50  0001 C CNN
-	1    4300 4950
+P 4500 4950
+F 0 "#PWR09" H 4500 4800 50  0001 C CNN
+F 1 "+5V" H 4515 5123 50  0000 C CNN
+F 2 "" H 4500 4950 50  0001 C CNN
+F 3 "" H 4500 4950 50  0001 C CNN
+	1    4500 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -665,12 +625,12 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR010
 U 1 1 5E5E106D
-P 4500 4950
-F 0 "#PWR010" H 4500 4800 50  0001 C CNN
-F 1 "+3.3V" H 4515 5123 50  0000 C CNN
-F 2 "" H 4500 4950 50  0001 C CNN
-F 3 "" H 4500 4950 50  0001 C CNN
-	1    4500 4950
+P 4300 4950
+F 0 "#PWR010" H 4300 4800 50  0001 C CNN
+F 1 "+3.3V" H 4315 5123 50  0000 C CNN
+F 2 "" H 4300 4950 50  0001 C CNN
+F 3 "" H 4300 4950 50  0001 C CNN
+	1    4300 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -725,9 +685,9 @@ F 3 "http://www.ti.com/lit/gpn/txs0102" H 4400 5580 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5050 5700 0    50   ~ 0
-TX_TTL
+TX_Roomba
 Text Label 5050 5500 0    50   ~ 0
-RX_TTL
+RX_Roomba
 Wire Wire Line
 	4800 5700 5250 5700
 Wire Wire Line
@@ -757,11 +717,11 @@ $EndComp
 Wire Wire Line
 	4000 5900 3500 5900
 Text Label 3500 5700 0    50   ~ 0
-TX_Roomba
+TX_TTL
 Wire Wire Line
 	4000 5700 3500 5700
 Text Label 3500 5500 0    50   ~ 0
-RX_Roomba
+RX_TTL
 Wire Wire Line
 	4400 6100 4950 6100
 $Comp
@@ -779,7 +739,6 @@ Wire Wire Line
 	3500 5500 4000 5500
 Wire Wire Line
 	10250 1650 10250 2050
-NoConn ~ 9800 2050
 $Comp
 L LMZ21701SILT:LMZ21701SILT IC1
 U 1 1 5EBB48E6
@@ -803,27 +762,17 @@ Connection ~ 2800 2300
 Wire Wire Line
 	2800 2000 2800 2100
 Connection ~ 2800 2000
-Wire Wire Line
-	2800 2000 2900 2000
 $Comp
 L Device:C_Small C2
 U 1 1 5E5CB833
-P 2900 2100
-F 0 "C2" H 2992 2146 50  0000 L CNN
-F 1 "22u" H 2992 2055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2900 2100 50  0001 C CNN
-F 3 "~" H 2900 2100 50  0001 C CNN
-	1    2900 2100
+P 2950 2150
+F 0 "C2" H 3042 2196 50  0000 L CNN
+F 1 "22u" H 3042 2105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2950 2150 50  0001 C CNN
+F 3 "~" H 2950 2150 50  0001 C CNN
+	1    2950 2150
 	1    0    0    -1  
 $EndComp
-Connection ~ 2900 2000
-Wire Wire Line
-	2900 2000 3050 2000
-Wire Wire Line
-	2900 2200 2900 2300
-Connection ~ 2900 2300
-Wire Wire Line
-	2900 2300 3050 2300
 Wire Wire Line
 	1600 2100 1500 2100
 Wire Wire Line
@@ -947,4 +896,100 @@ Wire Wire Line
 Connection ~ 10250 2050
 Wire Wire Line
 	10250 2050 10250 2350
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 5F0A6511
+P 3500 5900
+F 0 "#PWR0105" H 3500 5750 50  0001 C CNN
+F 1 "+3.3V" H 3500 6050 50  0000 C CNN
+F 2 "" H 3500 5900 50  0001 C CNN
+F 3 "" H 3500 5900 50  0001 C CNN
+	1    3500 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Mini-DIN-8 J1
+U 1 1 5F0B2F0D
+P 1850 5200
+F 0 "J1" H 1850 5681 50  0000 C CNN
+F 1 "Mini-DIN-8" H 1850 5590 50  0000 C CNN
+F 2 "kicad-libs:CUI_MD-80SM" V 1840 5190 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/resource/md-sm-series.pdf" V 1840 5190 50  0001 C CNN
+	1    1850 5200
+	1    0    0    -1  
+$EndComp
+Text Label 1100 5300 0    50   ~ 0
+VIN_Roomba
+Wire Wire Line
+	1550 5200 1100 5200
+Wire Wire Line
+	1850 4900 1550 4900
+Wire Wire Line
+	1550 5100 1550 4900
+Connection ~ 1550 4900
+Wire Wire Line
+	1550 4900 1350 4900
+NoConn ~ 1850 5500
+NoConn ~ 2150 5100
+Wire Wire Line
+	1050 5300 1550 5300
+$Comp
+L Device:C_Small C7
+U 1 1 5F191542
+P 6650 1350
+F 0 "C7" H 6742 1396 50  0000 L CNN
+F 1 "100n" H 6742 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6650 1350 50  0001 C CNN
+F 3 "~" H 6650 1350 50  0001 C CNN
+	1    6650 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5F198622
+P 7050 1350
+F 0 "C8" H 7142 1396 50  0000 L CNN
+F 1 "4.7u" H 7142 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7050 1350 50  0001 C CNN
+F 3 "~" H 7050 1350 50  0001 C CNN
+	1    7050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F1A7005
+P 6850 1450
+F 0 "#PWR0106" H 6850 1200 50  0001 C CNN
+F 1 "GND" H 6855 1277 50  0000 C CNN
+F 2 "" H 6850 1450 50  0001 C CNN
+F 3 "" H 6850 1450 50  0001 C CNN
+	1    6850 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1450 6850 1450
+Wire Wire Line
+	7050 1450 6850 1450
+Connection ~ 6850 1450
+Wire Wire Line
+	7050 1250 6650 1250
+Wire Wire Line
+	6650 1250 6450 1250
+Connection ~ 6650 1250
+Text Label 6450 1250 0    50   ~ 0
+USBVBUS
+Wire Wire Line
+	2800 2000 2950 2000
+Wire Wire Line
+	2800 2300 2950 2300
+Wire Wire Line
+	2950 2250 2950 2300
+Connection ~ 2950 2300
+Wire Wire Line
+	2950 2300 3050 2300
+Wire Wire Line
+	2950 2050 2950 2000
+Connection ~ 2950 2000
+Wire Wire Line
+	2950 2000 3050 2000
 $EndSCHEMATC
